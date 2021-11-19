@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Header 2</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        .header{
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+        }
+        .logo{
+            flex: 1;
+        }
+        .notifications{
+            flex: 1;
+            width: 250px;
+            height: 50px;
+            padding: 8px 24px;
+            color: whitesmoke;
+            background-color: rebeccapurple;
+            border: none;
+            border-radius: 8px;
+            align-items: center;
+        }
+        .profile-picture{
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: purple;
+        }
+        .left-group{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 16px;
+        }
+        .right-group{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 16px;
+        }
+        .links{
+            display: flex;
+            flex-direction: row;
+        }
+        ul{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left-group">
+            <div class="logo">
+                <h1>logo</h1>
+            </div>
+            <div class="links">
+                <ul>Link One</ul>
+                <ul>Link Two</ul>
+                <ul>Link Three</ul>
+            </div>
+        </div>
+        <div class="right-group">
+            <button class="notifications">
+                1 new notification
+            </button>
+            <div class="profile-picture"></div>
+        </div>        
+    </div>
+</body>
+</html>

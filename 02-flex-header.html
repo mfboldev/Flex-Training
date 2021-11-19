@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex header</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header{
+            border: 2px solid red;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+            /*gap: 25vw;*/
+        }
+        .left-links{
+            display: flex;
+            flex-direction: row;
+
+        }
+        .right-links{
+            display: flex;
+            flex-direction: row;
+        }
+        .logo{
+            border: 2px solid red;
+            border-radius: 50%;
+        }
+        ul{
+            background-color: white;
+            padding: 8px;
+            margin: 8px;
+            text-decoration: none;
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left-links">
+            <ul>One</ul>
+            <ul>Two</ul>
+            <ul>Three</ul>            
+        </div>
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <div class="right-links">
+            <ul>Four</ul>
+            <ul>Five</ul>
+            <ul>Six</ul>
+        </div>
+    </div>
+</body>
+</html>
